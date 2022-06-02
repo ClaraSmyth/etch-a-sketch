@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+/*####################################
+            MAIN SECTION 
+####################################*/
+
+.eas-body {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+
+
+/*####################################
+            FOOTER
+####################################*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
