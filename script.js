@@ -5,11 +5,16 @@ const buttons = document.querySelectorAll('button')
 let color = colorPicker.value;
 let randomColor = false;
 
-// Updates the color
-colorPicker.addEventListener('change', () => color = colorPicker.value);
-
 // Sets default grid size
 easGrid.style.gridTemplateColumns = `repeat(${gridSize.value}, 1fr)`;
+
+// Creates the divs on the page
+function createDivs() {
+    for (let i = 0; i < Math.pow(gridSize.value, 2); i++) {
+        const div = document.createElement('div');
+        easGrid.append(div);
+    }
+}
 
 // Hover effect
 easGrid.addEventListener('mouseover', e => {
@@ -20,20 +25,15 @@ easGrid.addEventListener('mouseover', e => {
     }
 });
 
-// Creates the divs on the page
-function createDivs() {
-    for (let i = 0; i < Math.pow(gridSize.value, 2); i++) {
-        const div = document.createElement('div');
-        easGrid.append(div);
-    }
-}
-
-// Adjusts the grid size
+// Slider adjusts the grid size
 gridSize.addEventListener('click', () => {
     easGrid.replaceChildren();
     easGrid.style.gridTemplateColumns = `repeat(${gridSize.value}, 1fr)`;
     createDivs();
 });
+
+// Updates the color when selected on color picker
+colorPicker.addEventListener('change', () => color = colorPicker.value);
 
 // Buttons
 buttons.forEach((button) => {
@@ -56,4 +56,3 @@ function updateColor() {
 }
 
 createDivs()
-console.log()
