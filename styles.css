@@ -30,7 +30,7 @@ p {
     height: 500px;
     background-color: black;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
 }
 
 .eas-grid div {
