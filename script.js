@@ -2,6 +2,7 @@ const easGrid = document.querySelector('#eas-grid');
 const gridSize = document.querySelector('#eas-size');
 const colorPicker = document.querySelector('#color-picker');
 const buttons = document.querySelectorAll('button')
+const sliderLabel = document.querySelectorAll('#slider-label')
 let color = colorPicker.value;
 let randomColor = false;
 
@@ -29,8 +30,16 @@ easGrid.addEventListener('mouseover', e => {
 gridSize.addEventListener('click', () => {
     easGrid.replaceChildren();
     easGrid.style.gridTemplateColumns = `repeat(${gridSize.value}, 1fr)`;
+    updateText();
     createDivs();
 });
+
+// Updates the grid size labels on the page
+function updateText() {
+    sliderLabel.forEach((label) => {
+        label.innerText = gridSize.value;
+    });
+}
 
 // Updates the color when selected on color picker
 colorPicker.addEventListener('change', () => color = colorPicker.value);
@@ -60,3 +69,4 @@ function updateColor() {
 }
 
 createDivs()
+updateText()
