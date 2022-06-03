@@ -4,6 +4,9 @@ const colorPicker = document.querySelector('#color-picker');
 const buttons = document.querySelectorAll('button')
 let color = colorPicker.value;
 
+// Updates the color
+colorPicker.addEventListener('change', () => color = colorPicker.value);
+
 // Sets default grid size
 easGrid.style.gridTemplateColumns = `repeat(${gridSize.value}, 1fr)`;
 
@@ -29,6 +32,7 @@ gridSize.addEventListener('click', () => {
     createDivs();
 });
 
+// Buttons
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
         if (button.id == 'btn-color') {
@@ -36,7 +40,7 @@ buttons.forEach((button) => {
         } else if (button.id == 'btn-erasor') {
             color = 'white';
         } else if (button.id == 'btn-rainbow') {
-            color = 'purple';
+            color = '#E63C8A';
         };
     });
 });
