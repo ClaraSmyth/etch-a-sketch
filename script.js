@@ -1,6 +1,8 @@
 const easGrid = document.querySelector('#eas-grid');
 const gridSize = document.querySelector('#eas-size');
 const colorPicker = document.querySelector('#color-picker');
+const buttons = document.querySelectorAll('button')
+let color = colorPicker.value;
 
 // Sets default grid size
 easGrid.style.gridTemplateColumns = `repeat(${gridSize.value}, 1fr)`;
@@ -8,7 +10,7 @@ easGrid.style.gridTemplateColumns = `repeat(${gridSize.value}, 1fr)`;
 // Hover effect
 easGrid.addEventListener('mouseover', e => {
     if(e.target.matches('div')) {
-        e.target.style.backgroundColor = colorPicker.value;
+        e.target.style.backgroundColor = color;
     }
 });
 
@@ -25,6 +27,18 @@ gridSize.addEventListener('click', () => {
     easGrid.replaceChildren();
     easGrid.style.gridTemplateColumns = `repeat(${gridSize.value}, 1fr)`;
     createDivs();
+});
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        if (button.id == 'btn-color') {
+            color = colorPicker.value;
+        } else if (button.id == 'btn-erasor') {
+            color = 'white';
+        } else if (button.id == 'btn-rainbow') {
+            color = 'purple';
+        };
+    });
 });
 
 createDivs()
