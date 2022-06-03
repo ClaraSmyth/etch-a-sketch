@@ -46,7 +46,11 @@ buttons.forEach((button) => {
             random = false;
         } else if (button.id == 'btn-rainbow') {
             random = true;
-        };
+        } else {
+            easGrid.replaceChildren();
+            easGrid.style.gridTemplateColumns = `repeat(${gridSize.value}, 1fr)`;
+            createDivs();
+        }
     });
 });
 
