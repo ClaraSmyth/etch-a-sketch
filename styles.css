@@ -28,18 +28,9 @@ p {
 .eas-grid {
     width: 500px;
     height: 500px;
-    background-color: black;
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
+    border: 1px solid black;
 }
-
-.eas-grid div {
-    background-color: blue;
-}
-
-/* .eas-grid div:hover {
-    background-color: red;
-} */
 
 /*####################################
             FOOTER
