@@ -16,14 +16,14 @@
         <section class="eas-grid" id="eas-grid">
         </section>
         <section class="eas-controls">
-            <label for="eas-size">Grid Size:</label>
-            <input type="range" id="eas-size" name="eas-size" min="4" max="64">
-            <label for="color-picker">Select color:</label>
-            <input type="color" id="color-picker" name="color-picker" value="#ff0000">
-            <button type="button" id="btn-color">Color</button> 
-            <button type="button" id="btn-eraser">Eraser</button> 
-            <button type="button" id="btn-rainbow">Rainbow</button>
-            <button type="button" id="btn-clear">Clear</button> 
+            <!-- <label for="color-picker">Select color:</label> -->
+            <input type="color" id="color-picker" name="color-picker" class="color-picker" value="#ff0000">
+            <label for="eas-size" class="slider-label">Grid Size:</label>
+            <input type="range" id="eas-size" name="eas-size" min="4" max="64" valuue="16" class="slider">
+            <button type="button" id="btn-color" class="btn">Color</button> 
+            <button type="button" id="btn-eraser" class="btn">Eraser</button> 
+            <button type="button" id="btn-rainbow" class="btn">Rainbow</button>
+            <button type="button" id="btn-clear" class="btn">Clear</button> 
         </section>
     </main>
     <footer>
