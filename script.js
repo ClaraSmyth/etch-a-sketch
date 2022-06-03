@@ -41,7 +41,7 @@ buttons.forEach((button) => {
         if (button.id == 'btn-color') {
             color = colorPicker.value;
             random = false;
-        } else if (button.id == 'btn-erasor') {
+        } else if (button.id == 'btn-eraser') {
             color = 'white';
             random = false;
         } else if (button.id == 'btn-rainbow') {
