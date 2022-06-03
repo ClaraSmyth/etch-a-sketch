@@ -3,6 +3,7 @@ const gridSize = document.querySelector('#eas-size');
 const colorPicker = document.querySelector('#color-picker');
 const buttons = document.querySelectorAll('button')
 let color = colorPicker.value;
+let randomColor = false;
 
 // Updates the color
 colorPicker.addEventListener('change', () => color = colorPicker.value);
@@ -14,6 +15,8 @@ easGrid.style.gridTemplateColumns = `repeat(${gridSize.value}, 1fr)`;
 easGrid.addEventListener('mouseover', e => {
     if(e.target.matches('div')) {
         e.target.style.backgroundColor = color;
+        if (random === true)
+            updateColor();
     }
 });
 
@@ -37,13 +40,20 @@ buttons.forEach((button) => {
     button.addEventListener('click', () => {
         if (button.id == 'btn-color') {
             color = colorPicker.value;
+            random = false;
         } else if (button.id == 'btn-erasor') {
             color = 'white';
+            random = false;
         } else if (button.id == 'btn-rainbow') {
-            color = '#E63C8A';
+            random = true;
         };
     });
 });
+
+// Selects the random colors
+function updateColor() {
+    color = `hsl(${Math.random() * 360}, 100%, 50%)`
+}
 
 createDivs()
 console.log()
