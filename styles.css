@@ -14,12 +14,14 @@ body {
     flex-direction: column;
     font-family: 'Indie Flower', cursive;
     font-size: 24px;
-    color: black;
+    color: #805671;
+    text-shadow: 1px 1px hsla(0, 0%, 0%, .7);
     background-color: #fffade;
 }
 
 header {
     font-size: 36px;
+    text-shadow: 2px 2px hsla(0, 0%, 0%, .7);
 }
 
 h1,
@@ -98,6 +100,8 @@ main {
     font-family: 'Indie Flower', cursive;
     font-size: 24px;
     font-weight: bold;
+    color: #805671;
+    text-shadow: 1px 1px hsla(0, 0%, 0%, .7);
 }
 
 .btn:hover {
@@ -171,9 +175,11 @@ footer {
 
 .footer-link {
     text-decoration: none;
-    color: black;
+
     font-weight: bold;
     font-size: 26px;
+    color: #805671;
+    text-shadow: 1px 1px hsla(0, 0%, 0%, .7);
 }
 
 .footer-link:hover {
