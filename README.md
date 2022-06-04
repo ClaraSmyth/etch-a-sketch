@@ -13,3 +13,5 @@ These are my notes as I work through creating the project.
 - The EAS is now working with a slider to change the grid size and a working color selector. Need to add an eraser 
 
 - Game is now fully working. Added an eraser, a rainbow effect and a clear all button. Need to style the page now so it looks nice.
+
+- Game is now fully styled and working. Might change a few things to do with the styling not 100% sure.
