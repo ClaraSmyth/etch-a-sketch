@@ -5,7 +5,7 @@ This is my second JavaScript project created for the [TheOdinProject](https://ww
 
 ## Lessons Learned
 
-This was another pretty difficult project. Had to do a lot of googling! Really helped me build upon using the fundamentals of javascript and help me understand them better especially with event listeners. Also got to use CSS Grid which ive been learning recently on the [freeCodeCamp](https://www.theodinproject.com/) responsive web design course. It was challenging but definitely worth it. Overall happy with how the final project turned out.
+This was another pretty difficult project. Had to do a lot of googling! Really helped me build upon using the fundamentals of javascript and help me understand them better especially with event listeners. Also got to use CSS Grid which ive been learning recently on the [freeCodeCamp](https://www.freecodecamp.org/) responsive web design course. It was challenging but definitely worth it. Overall happy with how the final project turned out.
 
 ## Notes
 
