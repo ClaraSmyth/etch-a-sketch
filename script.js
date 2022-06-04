@@ -4,7 +4,7 @@ const colorPicker = document.querySelector('#color-picker');
 const buttons = document.querySelectorAll('button')
 const sliderLabel = document.querySelectorAll('#slider-label')
 let color = colorPicker.value;
-let randomColor = false;
+let random = false;
 
 // Sets default grid size
 easGrid.style.gridTemplateColumns = `repeat(${gridSize.value}, 1fr)`;
