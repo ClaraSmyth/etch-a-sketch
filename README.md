@@ -1,7 +1,7 @@
 
 # Etch-A-Scetch
 
-This is my second JavaScript project created for the [TheOdinProject](https://www.theodinproject.com/).https://www.freecodecamp.org/
+This is my second JavaScript project created for the [TheOdinProject](https://www.theodinproject.com/).
 
 ## Lessons Learned
 
