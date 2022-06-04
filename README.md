@@ -1,6 +1,8 @@
 
 # Etch-A-Scetch
 
+Live Version - [Click here!](https://clarasmyth.github.io/etch-a-sketch/)
+
 This is my second JavaScript project created for the [TheOdinProject](https://www.theodinproject.com/).
 
 ## Lessons Learned
