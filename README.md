@@ -1,24 +1,36 @@
+<div  align=center>
+	<h1>Etch-A-Sketch
+	<br>
+		<img src="https://img.shields.io/static/v1?label=&message=HTML&color=E34F26&style=for-the-badge&logo=HTML5&logoColor=white&logoWidth=&labelColor=&link=">
+		<img src="https://img.shields.io/static/v1?label=&message=CSS&color=1572B6&style=for-the-badge&logo=CSS3&logoColor=white&logoWidth=&labelColor=&link=">
+		<img src="https://img.shields.io/static/v1?label=&message=Javascript&color=F7DF1E&style=for-the-badge&logo=Javascript&logoColor=black&logoWidth=&labelColor=&link=">
+		<br>
+	</h1>
+	<h3><b><a href="https://clarasmyth.github.io/etch-a-sketch/">View Live Demo</a></b></h3>
+</div>
 
-# Etch-A-Scetch
+![Gif of Project](./readme-assets/Etch-A-Sketch.gif)
 
-Live Version - [Click here!](https://clarasmyth.github.io/etch-a-sketch/)
+## Description
 
-![Image of the Etch-A-Sketch](https://i.imgur.com/6r8Qd2d.png)
+This is an Etch-A-Sketch project created as part of [TheOdinProject](https://www.theodinproject.com) curriculum.
 
-This is my second JavaScript project created for the [TheOdinProject](https://www.theodinproject.com/).
+To see the assignment details - [Click Here](https://clarasmyth.github.io/etch-a-sketch/)
 
-## Lessons Learned
+## Built Using
 
-This was another pretty difficult project. Had to do a lot of googling! Really helped me build upon using the fundamentals of javascript and help me understand them better especially with event listeners. Also got to use CSS Grid which ive been learning recently on the [freeCodeCamp](https://www.freecodecamp.org/) responsive web design course. It was challenging but definitely worth it. Overall happy with how the final project turned out.
+-   HTML5 <img src="./readme-assets/html5.svg">
+-   CSS3 <img src="./readme-assets/css3.svg">
+-   JavaScript <img src="./readme-assets/javascript.svg">
 
-## Notes
+## Credits
 
-These are my notes as I work through creating the project.
+#### Icons
 
-- Have a very rough working Etch-A-Sketch. Need to add a way for the user to be able to select the grid size and choose a color.
+-   [Simple Icons](https://simpleicons.org/)
 
-- The EAS is now working with a slider to change the grid size and a working color selector. Need to add an eraser 
+## Gallery
 
-- Game is now fully working. Added an eraser, a rainbow effect and a clear all button. Need to style the page now so it looks nice.
+#### Home page
 
-- Game is now fully styled and working. Might change a few things to do with the styling not 100% sure.
+![Image of Project](./readme-assets/etch-a-sketch.png)
